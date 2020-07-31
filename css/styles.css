@@ -1,0 +1,79 @@
+jumbotron {
+  text-align: center;
+  background-color: #7030A0;
+  color: white;
+}
+.buttons-menu .btn {
+  margin-top: 4px;
+  width: 200px;
+  font-size: 20px;
+}
+
+.medium-wide {
+  width: 300px;
+}
+#size {
+  margin-bottom:15px;
+}
+label {
+  font-size:20px;
+}
+.checkboxes {
+  font-size: 18px;
+}
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+body {
+  background-image: url("");
+  background-repeat:no-repeat;
+  background-size: cover;
+  font-family: 'Nunito', sans-serif;
+}
+#logo {
+  float: left;
+  width: 150px;
+}
+#pizza {
+  float: right;
+  width: 180px;
+}
+#pizza1-img, #pizza2-img{
+  float: right;
+  margin-right:30px;
+}
+#pizza2-img {
+  float: right;
+  width: 500px;
+}
+#pizza3-img {
+  float: right;
+  width: 500px;
+
+}
+.panel-heading {
+  text-align: center;
+}
+form {
+  margin:30px;
+}
+.about-text {
+  font-size: 19px;
+}
+.initial-hidden {
+  display:none;
+}
+.has-error {
+  display:none;
+}
+#error-message {
+  color:#A94442;
+}
+.order-summary p, li {
+  font-size:19px;
+}
+.no-address {
+  color:#A94442;
+  font-size: 17px;
+}
