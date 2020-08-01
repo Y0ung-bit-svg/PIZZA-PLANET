@@ -1,4 +1,4 @@
-# PIZZA PLANET 
+# PIZZA PLANET
 <p>A Website that allows you to order pizza with different options.</p>
 
 # OWNERSHIP
@@ -7,10 +7,10 @@
 # DESCRIPTION
 <p>This website was created to order pizza.</p>
 <ol>
-<li>Create constructor for pizza allowing multiple options for crust,toppings and size.</li>br>
-<li>Determine values for each crust,toppings and size.</li>br>
-<li>Create a prototype method that calculates the cost of a pizza.</li>br>
-<li>Create form for user to order from.</li>br>
+<li>Create constructor for pizza allowing multiple options for crust,toppings and size.</li>
+<li>Determine values for each crust,toppings and size.</li>
+<li>Create a prototype method that calculates the cost of a pizza.</li>
+<li>Create form for user to order from.</li>
 </ol>
 # TECHNOLOGIES USED
 <ul>

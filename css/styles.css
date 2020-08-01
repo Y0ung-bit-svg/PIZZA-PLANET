@@ -1,6 +1,6 @@
-jumbotron {
+.jumbotron {
   text-align: center;
-  background-color: #7030A0;
+  background-color: purple;
   color: white;
 }
 .buttons-menu .btn {
@@ -8,7 +8,9 @@ jumbotron {
   width: 200px;
   font-size: 20px;
 }
-
+h1{
+  font-weight: 200;
+}
 .medium-wide {
   width: 300px;
 }
@@ -26,10 +28,17 @@ input[type="checkbox"] {
   height: 18px;
 }
 body {
-  background-image: url("");
+  background-image: url("https://i.postimg.cc/pXppHwQz/background.jpg");
+  opacity: inherit;
   background-repeat:no-repeat;
   background-size: cover;
   font-family: 'Nunito', sans-serif;
+  }
+#icon {
+  float:left;
+  width: 150px;
+  height: 120px;
+  margin-right: 30px;
 }
 #logo {
   float: left;
@@ -41,7 +50,7 @@ body {
 }
 #pizza1-img, #pizza2-img{
   float: right;
-  margin-right:30px;
+  margin-right:20px;
 }
 #pizza2-img {
   float: right;

@@ -1,0 +1,160 @@
+ <!DOCTYPE html>
+ <html lang="en" dir="ltr">
+   <head>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="css/bootstrap.css">
+     <link rel="stylesheet" href="css/styles.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+     <title>PIZZA PLANET</title>
+   </head>
+   <body>
+     <div class="container">
+       <div class="jumbotron">
+         <img id="icon" src="Images/icon.png" alt="Icon">
+         <img id="pizza" src="Images/pizza.png" alt="Pizza">
+         <h1>PIZZA PLANET</h1>
+         <p>It's Intriging</p>
+         <div class="buttons-menu">
+           <button id="home-page" type="button" name="button" class="btn btn-warning">Home</button><br>
+           <button id="order-page" type="button" name="button" class="btn btn-warning">Order</button><br>
+           <button id="about-page" type="button" name="button" class="btn btn-warning">About Us</button>
+         </div>
+       </div>
+       <!--HOME -->
+       <div class="home panel panel-warning">
+         <div class="panel-heading">
+           <h2>WELCOME TO PIZZA PLANET</h2>
+         </div>
+         <div class="panel-body">
+           <img id="pizza1-img" src="Images/pizza1.png" alt="pizza1">
+           <blockquote>
+             <p> THERE’S NO BETTER FEELING IN THE WORLD THAN A WARM PIZZA BOX IN YOUR LAP.</p>
+             <footer>Kevin James</footer>
+           </blockquote>
+           <blockquote>
+             <p>I LOVE PIZZA; YOU CAN’T REALLY GO WRONG WITH PIZZA.</p>
+             <footer>Nick Jonas</footer>
+           </blockquote>
+           <blockquote>
+             <p>WHEN LIFE GIVE YOU PIZZA, EAT IT QUICKLY BEFORE ANYONE REALIZES THAT YOU HAVE IT.</p>
+             <footer>Anonymous</footer>
+           </blockquote>
+         </div>
+       </div>
+       <!-- ORDER -->
+     <div class="order panel panel-warning initial-hidden">
+       <h2 class="panel-heading">Customize Your Pizza!</h2>
+       <img class="panel-body" id="waluigi1-img" src="img/pizza2.png" alt="pizza2">
+       <form id="pizza-order-form" class="panel-body">
+         <div class="no-error form-group">
+           <label for="User-Name">Name:</label>
+           <input id="User-Name" class="form-control medium-wide input-lg" type="text">
+         </div>
+         <div class="form-group has-error">
+           <label for="User-Name-Again">Name:</label>
+           <input id="User-Name-Again" class="form-control medium-wide input-lg" type="text">
+           <p id="error-message">I need a name for the order!</p>
+         </div>
+         <label for="size">Size:</label>
+         <select class="form-control medium-wide input-lg" id="size">
+           <option value="0">Personal (8")</option>
+           <option value="1">Small (10")</option>
+           <option value="2">Medium (12")</option>
+           <option value="3">Large (14")</option>
+           <option value="4">Extra Large (16")</option>
+         </select>
+         <label for="toppings" id="toppings">Choose Toppings:</label>
+         <div class="form-group checkboxes" id="toppings">
+           <input type="checkbox" name="toppings" value="0"> Pepperoni<br>
+           <input type="checkbox" name="toppings" value="1"> Mushroom<br>
+           <input type="checkbox" name="toppings" value="2"> Onion<br>
+           <input type="checkbox" name="toppings" value="3"> Sausage<br>
+           <input type="checkbox" name="toppings" value="4"> Bacon<br>
+           <input type="checkbox" name="toppings" value="5"> Pineapple<br>
+           <input type="checkbox" name="toppings" value="6"> Olive<br>
+           <input type="checkbox" name="toppings" value="7"> Extra Cheese<br>
+         </div>
+         <div class="radio-pickup-deliver">
+           <label for="toppings" id="toppings">Choose One:</label>
+           <div class="radio pickup-click">
+             <label>
+               <input type="radio" name="pickup-deliver" value="pickup" checked>
+               Pick Up At Restaurant
+             </label>
+           </div>
+           <div class="radio deliver-click">
+             <label>
+               <input type="radio" name="pickup-deliver" value="deliver">
+               Delivery
+             </label>
+           </div>
+         </div>
+         <div class="panel-body address-entry initial-hidden">
+           <h3>Enter an address to deliver to:</h3>
+           <div class="form-group">
+             <label for="addressStreet">Street Address</label>
+             <input id="addressStreet" class="form-control" type="text">
+           </div>
+           <div class="row">
+             <div class="form-group col-md-6">
+               <label for="addressCity">City</label>
+               <input id="addressCity" class="form-control" type="text">
+               <select class="form-control" id="addressCity">
+                 <option>Nairobi</option>
+               </select>
+             </div>
+             <div class="form-group col-md-3">
+               <label for="addressEstate">Estate</label>
+               <select class="form-control" id="addressEstate">
+                 <option>Langata</option>
+                 <option>Runda</option>
+                 <option>Karen</option>
+                 <option>OTHER</option>
+               </select>
+             </div>
+
+             <div class="form-group col-md-3">
+               <label for="addressZip">Zip</label>
+               <input id="addressZip" class="form-control" type="text">
+             </div>
+           </div>
+           <p class="initial-hidden no-address">I need to know where to deliver!!</p>
+         </div>
+
+         <button type="submit" class="btn btn-warning btn-lg">Order!</button>
+       </form>
+     </div>
+      <!--ORDER SUMMARY -->
+      <div class="order-summary panel panel-warning initial-hidden">
+        <h2 class="panel-heading">Order Summary! Thank You!</h2>
+        <img id="pizza2-img" src="Images/pizza1.png" alt="pizza">
+        <div class="panel-body">
+          <h3>Name for order:<span id="name-order"></span></h3>
+          <p>Pizza; <span id="size-pizza"></span>size pizza(<span id="diameter-pizza"></span>) with the following toppings;</p>
+          <ul id="toppings-ordered"></ul>
+          <p>Your total; <span id="total-cost"></span></p>
+          <div class="deliver-pickup">
+            <div class="deliver-message">
+              <p>We will deliver to:</p>
+              <p><span id="address-street"></p>
+                <p><span id="address-city"></span> <span id="address-estate"></span> <span id="address-zip"></span></p>
+            </div>
+            <div class="pickup-message">
+              <p>We will have your order ready for you when you arrive!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--ABOUT US-->
+      <div class="about-us panel-warning initial-hidden">
+        <h2 class="panel-heading">Our Story</h2>
+        <img id="pizza3-img"src="Images/pizza3.png" alt="pizza">
+        <div class="panel-body">
+          <p class="about-text">Founded in 2020,Pizza Planet is the recognized national leader in pizza delivery operating a network of company-owned and franchise-owned stores in Nairobi,Kenya.</p>
+          <p class="about-text">Pizza Planet is a company of exceptional people on a mission to be the best pizza delivery company in the world.</p>
+          <p class="about-text">Pepperoni is the most popular Pizza Planet topping in Nairobi,followed by sausage, bacon, mushrooms and pineapple.</p>
+        </div>
+      </div>
+     </div>
+   </body>
+ </html>
