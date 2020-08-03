@@ -12,6 +12,7 @@
 <li>Create a prototype method that calculates the cost of a pizza.</li>
 <li>Create form for user to order from.</li>
 </ol>
+
 # TECHNOLOGIES USED
 <ul>
   <li>HTML</li>
