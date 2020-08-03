@@ -47,7 +47,7 @@
        <!-- ORDER -->
      <div class="order panel panel-warning initial-hidden">
        <h2 class="panel-heading">Customize Your Pizza!</h2>
-       <img class="panel-body" id="pizza2-img" src="img/pizza2.png" alt="pizza2">
+       <img class="panel-body" id="pizza2-img" src="Images/pizza2.png" alt="pizza2">
        <form id="pizza-order-form" class="panel-body">
          <div class="no-error form-group">
            <label for="User-Name">Name:</label>
@@ -95,13 +95,12 @@
          <div class="panel-body address-entry initial-hidden">
            <h3>Enter an address to deliver to:</h3>
            <div class="form-group">
-             <label for="addressStreet">Street Address</label>
-             <input id="addressStreet" class="form-control" type="text">
+             <label for="addressHome">Home Address</label>
+             <input id="addressHome" class="form-control" type="text">
            </div>
            <div class="row">
              <div class="form-group col-md-6">
                <label for="addressCity">City</label>
-               <input id="addressCity" class="form-control" type="text">
                <select class="form-control" id="addressCity">
                  <option>Nairobi</option>
                </select>
@@ -115,11 +114,6 @@
                  <option>OTHER</option>
                </select>
              </div>
-
-             <div class="form-group col-md-3">
-               <label for="addressZip">Zip</label>
-               <input id="addressZip" class="form-control" type="text">
-             </div>
            </div>
            <p class="initial-hidden no-address">I need to know where to deliver!!</p>
          </div>
@@ -132,15 +126,15 @@
         <h2 class="panel-heading">Order Summary! Thank You!</h2>
         <img id="pizza2-img" src="Images/pizza1.png" alt="pizza">
         <div class="panel-body">
-          <h3>Name for order:<span id="name-order"></span></h3>
-          <p>Pizza; <span id="size-pizza"></span>size pizza(<span id="diameter-pizza"></span>) with the following toppings;</p>
+          <h3>Name for order: <span id="name-order"></span></h3>
+          <p>Pizza; <span id="size-pizza"></span> size pizza(<span id="diameter-pizza"></span>) with the following toppings;</p>
           <ul id="toppings-ordered"></ul>
           <p>Your total; <span id="total-cost"></span></p>
           <div class="deliver-pickup">
             <div class="deliver-message">
               <p>We will deliver to:</p>
-              <p><span id="address-street"></p>
-                <p><span id="address-city"></span> <span id="address-estate"></span> <span id="address-zip"></span></p>
+              <p><span id="address-home"></p>
+                <p><span id="address-city"></span><span id="address-estate"></span></p>
             </div>
             <div class="pickup-message">
               <p>We will have your order ready for you when you arrive!</p>
@@ -149,15 +143,15 @@
         </div>
       </div>
       <!--ABOUT US-->
-      <div class="about-us panel-warning initial-hidden">
-        <h2 class="panel-heading">Our Story</h2>
-        <img id="pizza3-img"src="Images/pizza3.png" alt="pizza">
-        <div class="panel-body">
+      <div class="about-us panel panel-warning initial-hidden">
+         <h2 class="panel-heading">Our Story</h2>
+         <img id="pizza3-img"src="Images/pizza3.png" alt="pizza">
+         <div class="panel-body">
           <p class="about-text">Founded in 2020,Pizza Planet is the recognized national leader in pizza delivery operating a network of company-owned and franchise-owned stores in Nairobi,Kenya.</p>
           <p class="about-text">Pizza Planet is a company of exceptional people on a mission to be the best pizza delivery company in the world.</p>
           <p class="about-text">Pepperoni is the most popular Pizza Planet topping in Nairobi,followed by sausage, bacon, mushrooms and pineapple.</p>
-        </div>
-      </div>
+         </div>
+       </div>
      </div>
    </body>
  </html>
